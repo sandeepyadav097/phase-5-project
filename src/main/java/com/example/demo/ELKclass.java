@@ -26,7 +26,7 @@ class ELKController {
 	    public String index() {
 	     
 	 
-	        return "<h3>Howdy! This app is running perfextly!!!!</h3>";
+	        return "<h3 style='text-align:center'>Howdy! This app is running perfextly!!!!</h3>";
 	    }
 	@GetMapping("/time")
 	public String helloWorld() {
