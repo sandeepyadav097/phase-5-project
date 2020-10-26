@@ -30,7 +30,7 @@ class ELKController {
 	    }
 	@GetMapping("/time")
 	public String helloWorld() {
-		String response = "Welcome to Spring Boot Application : Current Time is " + new Date();
+		String response = "<h3 style='text-align:center'>Welcome to Spring Boot Application : Current Time is " + new Date()+"</h3>";
 
 		return response;
 	}
