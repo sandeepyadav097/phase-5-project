@@ -5,7 +5,6 @@ pipeline {
       stage('Build') {
         steps {
            
-          sh 'sudo kill -9 $(sudo lsof -t -i:4000)'
           echo 'Building...'
           echo "Running ${env.BUILD_ID} ${env.BUILD_DISPLAY_NAME} on ${env.NODE_NAME} and JOB ${env.JOB_NAME}"
 	  sh "mvn clean package"
